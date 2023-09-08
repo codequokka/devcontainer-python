@@ -4,7 +4,8 @@ ARG USER_NAME=vscode
 ARG WORK_DIR=/workspace
 
 RUN apt update && \
-    apt install -y sudo
+    apt install -y sudo && \
+    apt install -y libgl1-mesa-dev
 
 COPY ./requirements*.txt /tmp
 RUN pip install --no-cache-dir -r /tmp/requirements.txt && \
