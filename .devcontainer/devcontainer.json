@@ -23,19 +23,23 @@
                 // "dotfiles.repository": "codequokka/dotfiles",
                 // "dotfiles.targetPath": "~/dotfiles",
                 // "dotfiles.installCommand": "~/dotfiles/install.sh",
+                // Editor
                 "editor.formatOnSave": true,
+                "editor.formatOnPaste": true,
+                // Python
                 "python.defaultInterpreterPath": "python3",
-                "python.analysis.completeFunctionParens": true,
+                "python.languageServer": "Pylance",
                 "python.analysis.typeCheckingMode": "strict",
                 "python.analysis.diagnosticMode": "workspace",
-                "python.languageServer": "Pylance",
+                "python.analysis.completeFunctionParens": true,
+                "python.formatting.provider": "none",
                 "[python]": {
                     "editor.tabSize": 4,
+                    "editor.defaultFormatter": "ms-python.black-formatter",
                     "editor.codeActionsOnSave": {
                         "source.organizeImports": true,
                         "source.fixAll": true
-                    },
-                    "editor.defaultFormatter": "ms-python.black-formatter"
+                    }
                 }
             }
         }
